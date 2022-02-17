@@ -42,6 +42,14 @@ body {
   color: var(--dark-grayish-blue);
 }
 
+.dark-mcyan {
+  color: var(--dark-desaturated-cyan);
+}
+
+.dark-blue {
+  color: var(--dark-blue);
+}
+
 .text-fraunces {
   font-family: var(--ff-fraunces);
 }
@@ -143,7 +151,7 @@ header {
 
 .glass-background {
   background: url("../images/mobile/image-stand-out.jpg") no-repeat center
-  center / cover;
+    center / cover;
   height: 400px;
 }
 
@@ -162,6 +170,26 @@ header {
 
 .underline-red {
   background-color: #fbdace;
+}
+
+.two-red-fruit-background {
+  height: 660px;
+  background: url("../images/mobile/image-graphic-design.jpg") no-repeat top
+    center / cover;
+}
+
+.two-red-fruit-background h2,
+.two-red-fruit-background p,
+.orange-background h2,
+.orange-background p {
+  position: relative;
+  top: 440px;
+}
+
+.orange-background {
+  height: 660px;
+  background: url("../images/mobile/image-photography.jpg") no-repeat top center /
+    cover;
 }
 
 /* attribution */
@@ -214,15 +242,56 @@ header {
     width: 100% !important;
   }
 
+  .four-grid-box {
+    width: 90%;
+  }
+
   .egg-background {
     background: url("../images/desktop/image-transform.jpg") no-repeat center
       center / cover;
     height: 400px;
   }
-  
+
   .glass-background {
     background: url("../images/desktop/image-stand-out.jpg") no-repeat center
-    center / cover;
+      center / cover;
     height: 400px;
+  }
+
+  .two-red-fruit-background {
+    height: 600px;
+    background: url("../images/desktop/image-graphic-design.jpg") no-repeat top
+      center / cover;
+  }
+
+  .orange-background {
+    height: 600px;
+    background: url("../images/desktop/image-photography.jpg") no-repeat top
+      center / cover;
+  }
+
+  .two-red-fruit-background h2,
+  .two-red-fruit-background p,
+  .orange-background h2,
+  .orange-background p {
+    position: relative;
+    top: 380px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .two-red-fruit-background h2,
+  .two-red-fruit-background p,
+  .orange-background h2,
+  .orange-background p {
+    position: relative;
+    top: 380px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
