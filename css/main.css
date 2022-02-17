@@ -1,0 +1,228 @@
+/* General */
+
+:root {
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --dark-blue: hsl(198, 62%, 26%);
+  --dark-moderate-cyan: hsl(168, 34%, 41%);
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+
+  --ff--barlow: "barlow", Arial, Helvetica, sans-serif;
+  --ff-fraunces: "fraunces", Arial, Helvetica, sans-serif;
+}
+
+*,
+body,
+html,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-size: 18px;
+  font-family: var(--ff--barlow);
+  font-weight: 600;
+}
+
+.text-very-dark-dblue {
+  color: var(--very-dark-desaturated-blue);
+}
+
+.text-grayish-blue {
+  color: var(--dark-grayish-blue);
+}
+
+.text-fraunces {
+  font-family: var(--ff-fraunces);
+}
+
+.text-barlow {
+  font-family: var(--ff-barlow);
+}
+
+/* header */
+
+header {
+  background-color: #3dbeff;
+}
+
+#navBar {
+  transition: transform 0.4s, opacity 0.4s;
+  opacity: 0;
+  transform: scale(0.6);
+  pointer-events: none;
+  flex-basis: 100%;
+}
+
+#navBar.show {
+  transform: scale(1);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.menu-list {
+  position: relative;
+  top: 1rem;
+  flex: 0 0 100%;
+}
+
+.nav-triangle {
+  position: absolute;
+  top: 4px;
+  right: 0px;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid transparent;
+
+  border-right: 30px solid white;
+}
+
+.menu-list__ul {
+  position: absolute;
+  width: 100%;
+  top: 30px;
+  left: 0px;
+  background-color: #fff;
+  padding: 30px 0px;
+}
+
+.nav-link {
+  color: var(--dark-grayish-blue);
+}
+
+.navbar-toggler:hover {
+  box-shadow: unset !important;
+}
+
+.menu-contact-btn {
+  background-color: var(--yellow);
+  font-family: var(--ff-fraunces);
+  font-weight: 700;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  color: var(--very-dark-desaturated-blue);
+}
+
+/* hero section */
+
+.hero {
+  background: url("../images/icon-arrow-down.svg") no-repeat top 190px center,
+    url("../images/mobile/image-header.jpg") no-repeat bottom center / cover;
+  background-color: #3dbeff;
+  height: 440px;
+  padding-top: 10px;
+}
+
+.hero h1 {
+  padding-top: 10px;
+  margin-top: 30px;
+
+  font-family: var(--ff-fraunces);
+  font-weight: 900;
+  font-size: 40px;
+  letter-spacing: 4px;
+}
+
+/* rows */
+
+.egg-background {
+  background: url("../images/mobile/image-transform.jpg") no-repeat center
+    center / cover;
+  height: 400px;
+}
+
+.glass-background {
+  background: url("../images/mobile/image-stand-out.jpg") no-repeat center
+  center / cover;
+  height: 400px;
+}
+
+.underline {
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10px;
+  width: 110%;
+  z-index: -1;
+}
+
+.underline-yellow {
+  background-color: #fdf0bd;
+}
+
+.underline-red {
+  background-color: #fbdace;
+}
+
+/* attribution */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background: url("../images/icon-arrow-down.svg") no-repeat top 160px center,
+      url("../images/desktop/image-header.jpg") no-repeat bottom center /
+        contain;
+    background-color: #3dbeff;
+  }
+
+  #navBar {
+    position: static;
+    opacity: 1;
+    transform: unset;
+    pointer-events: all;
+    background-color: transparent;
+    flex-basis: auto;
+  }
+
+  .menu-list__ul {
+    position: static;
+    flex-direction: row;
+    width: unset;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .nav-link {
+    color: var(--white);
+  }
+
+  .menu-contact-btn {
+    background-color: var(--white);
+    color: var(--dark-blue);
+    padding: 0;
+  }
+
+  .first-four-grid-h2 {
+    width: 100% !important;
+  }
+
+  .egg-background {
+    background: url("../images/desktop/image-transform.jpg") no-repeat center
+      center / cover;
+    height: 400px;
+  }
+  
+  .glass-background {
+    background: url("../images/desktop/image-stand-out.jpg") no-repeat center
+    center / cover;
+    height: 400px;
+  }
+}
