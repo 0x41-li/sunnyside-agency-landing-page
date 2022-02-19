@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://0x41-li.github.io/sunnyside-agency-landing-page/](https://0x41-li.github.io/sunnyside-agency-landing-page/m)
+- Live Site URL: [https://0x41-li.github.io/sunnyside-agency-landing-page/](https://0x41-li.github.io/sunnyside-agency-landing-page/)
 
 ## My process
 
