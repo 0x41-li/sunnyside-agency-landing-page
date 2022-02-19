@@ -39,7 +39,15 @@ body {
 }
 
 .text-grayish-blue {
+  color: var(--grayish-blue);
+}
+
+.text-dark-grayish-blue {
   color: var(--dark-grayish-blue);
+}
+
+.text-very-dark-grayish-blue {
+  color: var(--very-dark-grayish-blue);
 }
 
 .dark-mcyan {
@@ -249,13 +257,13 @@ header {
   .egg-background {
     background: url("../images/desktop/image-transform.jpg") no-repeat center
       center / cover;
-    height: 400px;
+    height: 500px;
   }
 
   .glass-background {
     background: url("../images/desktop/image-stand-out.jpg") no-repeat center
       center / cover;
-    height: 400px;
+    height: 500px;
   }
 
   .two-red-fruit-background {
@@ -280,6 +288,10 @@ header {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .feedback-box {
+    max-width: 400px;
+  }
 }
 
 
@@ -294,4 +306,9 @@ header {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .feedback-box {
+    max-width: unset;
+  }
+
 }
