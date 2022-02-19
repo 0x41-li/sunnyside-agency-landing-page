@@ -289,7 +289,7 @@ footer a:hover > svg > path {
   nav a:hover {
     color: var(--white) !important;
   }
-  
+
   nav a.menu-contact-btn:hover {
     background-color: rgba(255, 255, 255, 0.3);
     color: var(--white) !important;
@@ -304,11 +304,9 @@ footer a:hover > svg > path {
   }
 
   .hero h1 {
-    margin-top: 70px;
-    font-size: 50px;
+    margin-top: 90px;
+    font-size: 56px;
   }
-
-
 
   #navBar {
     position: static;
@@ -348,23 +346,23 @@ footer a:hover > svg > path {
   .egg-background {
     background: url("../images/desktop/image-transform.jpg") no-repeat center
       center / cover;
-    height: 500px;
+    height: 600px;
   }
 
   .glass-background {
     background: url("../images/desktop/image-stand-out.jpg") no-repeat center
       center / cover;
-    height: 500px;
+    height: 600px;
   }
 
   .two-red-fruit-background {
-    height: 600px;
+    height: 700px;
     background: url("../images/desktop/image-graphic-design.jpg") no-repeat top
       center / cover;
   }
 
   .orange-background {
-    height: 600px;
+    height: 700px;
     background: url("../images/desktop/image-photography.jpg") no-repeat top
       center / cover;
   }
@@ -402,7 +400,7 @@ footer a:hover > svg > path {
   }
 
   .backs__back {
-    height: 400px;
+    height: 500px;
   }
 
   .first-back {
@@ -423,5 +421,13 @@ footer a:hover > svg > path {
   .fourth-back {
     background: url("../images/desktop/image-gallery-sugarcubes.jpg") no-repeat
       center / cover;
+  }
+}
+
+/* overwrite bootstrap container-xxl CSS */
+
+@media (min-width: 1400px) {
+  .container-xxl {
+    max-width: 1440px;
   }
 }
