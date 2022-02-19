@@ -296,7 +296,7 @@ footer a:hover > svg > path {
   }
 
   .hero {
-    background: url("../images/icon-arrow-down.svg") no-repeat top 240px center,
+    background: url("../images/icon-arrow-down.svg") no-repeat top 300px center,
       url("../images/desktop/image-header.jpg") no-repeat bottom center /
         contain;
     background-color: #3dbeff;
